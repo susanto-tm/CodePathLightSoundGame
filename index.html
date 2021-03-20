@@ -14,11 +14,30 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-    <h1>Hi there!</h1>
+    <h1>Light and Sound Memory Game</h1>
     
     <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
+      Repeat the pattern back to win the game!
     </p>
+    
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    
+    <div style="display:flex;">
+      <p id="chances">You have 3 tries left</p>
+      <p id="clockDesc" style="margin-left:20px;">Time:</p>
+      <p id="clock" style="margin-left:5px;color:red;">10</p>
+      <p id="clockUnits" style="margin-left:5px;color:red;">sec</p>
+    </div>
+    
+    <div id="gameCanvas">
+      <button id="btn1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="btn2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="btn3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="btn4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button id="btn5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <button id="btn6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+    </div>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
