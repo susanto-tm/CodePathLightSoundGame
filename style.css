@@ -1,0 +1,84 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: slategray;
+  color: white;
+  font-size: 100%;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+}
+
+#startBtn, #stopBtn {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+}
+
+#startBtn:hover, #stopBtn:hover {
+  color: white;
+  background-color: #357DDD;
+}
+
+#gameCanvas > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#btn1 {
+  background-color: lightgreen;
+}
+
+#btn1:active, #btn1.lit {
+  background-color: green;
+}
+
+#btn2 {
+  background-color: lightblue;
+}
+
+#btn2:active, #btn2.lit {
+  background-color: blue;
+}
+
+#btn3 {
+  background-color: pink;
+}
+
+#btn3:active, #btn3.lit {
+  background-color: red;
+}
+
+#btn4 {
+  background-color: lightyellow;
+}
+
+#btn4:active, #btn4.lit {
+  background-color: yellow;
+}
+
+#btn5 {
+  background-color: lightcoral;
+}
+
+#btn5:active, #btn5.lit {
+  background-color: coral;
+}
+
+#btn6 {
+  background-color: lightsalmon;
+}
+
+#btn6:active, #btn6.lit {
+  background-color: salmon;
+}
